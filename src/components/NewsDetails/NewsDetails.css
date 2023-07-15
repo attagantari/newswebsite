@@ -1,0 +1,36 @@
+.news-app{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.news-item {
+    width: 500px;
+    padding: 20px;
+    border: 1px solid;
+    margin-top: 20px;
+}
+
+.news-img {
+    width: 200px;
+    height: auto;
+    aspect-ratio: 3/2;
+    max-height: 200px;
+    max-width: 250px;
+    object-fit: cover;
+}
+
+.news-details{
+    display: flex;
+    flex-wrap: wrap;
+    display: grid;
+}
+
+.h3 {
+    display: grid;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+}

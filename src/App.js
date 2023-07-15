@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './newsdetails.css';
+import NewsList from './components/NewsList/NewsList';
+import Beranda from './pages/Beranda/Beranda';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar>
+        <li className='active'>
+          <a href="/Beranda">Beranda</a>
+        </li>
+        <li>
+          <a href="/About">About</a>
+        </li>
+      </Navbar>
+      <Beranda />
+      <NewsList />
     </div>
   );
 }
