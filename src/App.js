@@ -10,9 +10,6 @@ function App() {
         <li className='active'>
           <a href="/Beranda">Beranda</a>
         </li>
-        <li>
-          <a href="/About">About</a>
-        </li>
       </Navbar>
       <Beranda />
       <NewsList />

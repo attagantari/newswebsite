@@ -12,7 +12,9 @@ const Header = () => {
           <p className='header-text fs-18 fw-3'>Narasi Kerajinan yang memicu inspirasi, pengetahuan, dan hiburan</p><br />
         </div>
       </header>
-    </div>
+      <div className="container"><br />
+        </div>
+      </div>
   )
 }
 

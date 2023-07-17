@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import Beranda from './pages/Beranda/Beranda'
-import About from './pages/About/About'
 import NewsList from './components/NewsList/NewsList'
 import NewsDetail from './components/NewsDetails/NewsDetails'
 
@@ -12,7 +11,6 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path = "/" element ={<Beranda />}>
-        <Route path = "about" element ={<About />}/>
         <Route path = "news" element ={<NewsList />}/>
         <Route path = "/news/:id" element = {<NewsDetail />}/>
       </Route>

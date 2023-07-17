@@ -20,9 +20,10 @@
 }
 
 .news-img {
-    width: "10%";
+    width: "20%";
     aspect-ratio: 3/2;
-    max-height: 200px;
-    max-width: 300px;
+    max-height: 250px;
+    max-width: 350px;
     object-fit: cover;
+    justify-content: center;
 }
