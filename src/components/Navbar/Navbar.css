@@ -3,7 +3,9 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.5) 0px 4px 6px -2px;
 }
 .navbar-brand{
-    width: 90px;
+    display: flex;
+    align-items: center;
+    margin-right: 5px; /* umtuk mengatur jarak */
 }
 .navbar-brand span{
     margin-left: 2rem;
@@ -13,11 +15,7 @@
 }
 .navbar-content{
     display: flex;
-    width: 100%;
-}
-.navbar-toggler-btn{
-    transition: var(--transition);
-    z-index: 11;
+    align-items: center;
 }
 .navbar-collapse{
     position: fixed;
@@ -44,7 +42,9 @@
 .nav-link:hover{
     color: var(--purple-color);
 }
-
+ul.gap-4 {
+    margin-left: 5px;
+}
 @media screen and (min-width: 992px){
     .navbar-collapse{
         position: relative;
@@ -55,21 +55,21 @@
         transform: translateX(0);
         justify-content: flex-end;
     }
-    .navbar-toggler-btn{
-        display: none;
-    }
     .nav-item{
         margin-bottom: 0;
-        margin-left: 2.8rem;
+        margin-left: 1rem;
     }
     .nav-link{
         color: var(--black-color);
         font-size: 1.7rem;
         font-weight: 500!important;
         opacity: 0.8;
+
     }
-    .navbar-nav{
+    .navbar-nav {
         display: flex;
+        margin-right: auto;
+        text-align: right;
     }
 
 }

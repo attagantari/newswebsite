@@ -1,16 +1,16 @@
 .header-content{
-    min-height: 20vh;
-    background: linear-gradient(rgba(46, 44, 44, 0.137), rgba(100, 94, 94, 0.5)), center/cover no-repeat;
+    min-height: 15vh;
+    background: linear-gradient(rgba(80, 65, 43, 0.137), rgba(100, 94, 94, 0.5)), center/cover no-repeat;
     flex-direction: column;
 }
 .header-title h2{
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
 }
 .header-text p{
     text-align: center;
-    margin-top: -1.8rem;
-    margin-bottom: 2.8rem;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
     opacity: 0.8;
-    max-width: 770px;
+    max-width: 500px;
 }

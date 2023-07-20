@@ -3,6 +3,7 @@ import axios from 'axios';
 import NewsDetails from '../NewsDetails/NewsDetails';
 
 const NewsList = () => {
+  // State dan useEffect tetap sama seperti sebelumnya 
   const [headlineArticles, setHeadlineArticles] = useState([]);
   const [otherArticles, setOtherArticles] = useState([]);
 
@@ -23,31 +24,44 @@ const NewsList = () => {
   return (
     <div>
       {/* Section untuk headline */}
-      <div style={{flexDirection: 'row', marginRight: 20, textAlign:'right'}}>
+      <div className='nav-hero'>
+        <div className='nav-section'>
+          <div className='hero-grid'>
+        {/* Elemen untuk hero section */}
         {headlineArticles.map((article, index) => (
           <NewsDetails
-            key={index}
-            sx={{ minHeight: '500px', m: 2 }}
-            title={article.title}
-            description={article.description}
-            url={article.url}
-            urlToImage={article.urlToImage}
+          key={index}
+          style={{ fontSize: '20px', fontWeight: 'bold', margin:'20px'}}
+          title={article.title}
+          description={article.description}
+          url={article.url}
+          urlToImage={article.urlToImage}
+          isHaedline={true}
           />
-        ))}
-      </div><br />
-
-      {/* Section untuk berita lainnya */}
+          ))}
+        </div>
+        </div>
+      </div>
       <br />
+
+      {/* pemisah antara section headline dan berita lainnya */}
+      <div style={{ textAlign:'left', margin:'20px 0', borderBottom:'1px solid #ccc' }}>
       <h1>Latest News</h1>
-      <div style={{ display: 'grid', listStyle: 'none', gridTemplateColumns: 'repeat(3, auto)', gridTemplateRows: 'repeat(2, auto)' }}>
+      </div>
+      {/* Section untuk berita lainnya */}
+      <div 
+      style={{ display: 'grid',
+       gridTemplateColumns: 'repeat(3, 1fr)',
+        gap: '20px', 
+        position: 'relative' }}>
         {otherArticles.map((article, index) => (
           <NewsDetails
             key={index}
-            sx={{ minHeight: '500px', m: 2 }}
+            style={{ minHeight: '500px', margin: '2px' }} // Gunakan style bukan sx
             title={article.title}
             description={article.description}
             url={article.url}
-            urlToImage={article.urlToImage}
+            urlToImage={article.urlToImage} 
           />
         ))}
       </div>
